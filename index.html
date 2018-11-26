@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <!--Boot strap style link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Modal alert-->
+    <div class="modal" id="Modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Invalid Input</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Please complete all fields.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="jumbotron jumbotron-fluid text-center text-light rounded bg-success">
+                <div class="container">
+                    <h1 class="display-4">Train Schedule</h1>
+                    <p class="lead" id="current-time">chuga chuga choo chooo</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row schedule">
+            <div class="col-md-12">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    Current Time Schedule
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trains-here">
+
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row add-train">
+            <div class="col-md-12">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    Add Train
+                </div>
+                <form class="m-3">
+                    <div class="form-group">
+                        <label>Train Name</label>
+                        <input class="form-control" id="name-input" type="text" placeholder="D-line . . . . .">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Destination</label>
+                        <input class="form-control" id="destination-input" type="text" placeholder="London . . . . . .">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Time of first arrival (HH:mm am/pm)</label>
+                        <input class="form-control" id="arrival-input" type="time" placeholder="00:00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Frequency (minutes)</label>
+                        <input class="form-control" id="frequency-input" type="number" placeholder="minutes">
+                    </div>
+
+                    <button type="submit" id="add-train" class="btn btn-success">Submit</button>
+                    <button type="submit" id="refresh-train" class="btn btn-danger">refresh</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <!--link to firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+
+    <!--J Query and Bootstrap.js links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--link to moment.js,  this is for time stuff-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!--link to my external JS file-->
+    <!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
