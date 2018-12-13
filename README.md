@@ -1,4 +1,4 @@
-# train-schedule-bonus
+# Train-scheduleer
 
 ## About the App
 
@@ -13,10 +13,10 @@
 * I could also have the times update every minute.
 
 **Notes** I used mostly `<div>` elements in the html of this project.  I also used bootstrap.
+#
+### Visit the site here:  [Train Scheduler](https://austinwiley.github.io/train-schedule-b/)
 
-### Visit the site here:  [Train scheduler](https://austinwiley.github.io/BeerTriviaGame/)
-
-
+#
 As Bill Watterson once wrote:
 
 > As far as I'm concerned, if something is so complicated that you can't explain it in 10 seconds,
