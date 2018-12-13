@@ -1,4 +1,4 @@
-# Train-scheduleer
+# Train-scheduler
 
 ## About the App
 
