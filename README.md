@@ -14,6 +14,8 @@
 
 **Notes** I used mostly `<div>` elements in the html of this project.  I also used bootstrap.
 
+### Visit the site here:  [Train scheduler](https://austinwiley.github.io/BeerTriviaGame/)
+
 
 As Bill Watterson once wrote:
 
