@@ -14,7 +14,7 @@
 
 **Notes** I used mostly `<div>` elements in the html of this project.  I also used bootstrap.
 #
-### Visit the site here:  [Train Scheduler](https://austinwiley.github.io/train-schedule-b/)
+### Visit the site here:  [Train Scheduler](https://austinwiley.github.io/Train-Scheduler/)
 
 #
 As Bill Watterson once wrote:
